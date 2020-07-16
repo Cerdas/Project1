@@ -1,5 +1,10 @@
+// Alexander Cerdas
+// 7/15/2020
+// Cipher -  CaesarCode
+
 import java.util.Random;
 import java.util.Scanner;
+
 
 public class CaesarCode {
 
