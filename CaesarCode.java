@@ -1,6 +1,6 @@
+// Programming Fundamentals
 // Alexander Cerdas
-// 7/15/2020
-// Cipher -  CaesarCode
+// Programming assignment 1
 
 import java.util.Random;
 import java.util.Scanner;
@@ -18,10 +18,13 @@ public class CaesarCode {
 		int plaintext = 0;
 		int key = ran.nextInt(9);
 		
+		System.out.println("Welcome to the Cipher program");
+		System.out.println("Please enter 5 numbers between 0 and 19");
+		
 		// Creating "for" loop for plaintext
 		for(int i = 0; i <= 4; i++) {
 			
-			System.out.print("Enter a value between 0 - 19: ");
+			System.out.print("Enter number " + (i+1) + ": ");
 			int num = scan.nextInt();
 			
 			// If number is out of range terminate program
@@ -42,11 +45,9 @@ public class CaesarCode {
 		int encode = a*10 + b;
 
 		// Printing out plaintext, key and encoded number
-		System.out.println("Number is " + plaintext + ", Key is " + key);
-		System.out.println("The encoded number will be " + encode +
-				", since (" + (plaintext / 10) + "+" + key +
-				")%10=" + a + " and (" + (plaintext % 10) + "+" +
-				key + ")%10=" + b);
+		System.out.println("Total = " + plaintext);
+		System.out.println("Your random key is " + key);
+		System.out.println("Your encoded number is " + encode);
 		
 	}
 
